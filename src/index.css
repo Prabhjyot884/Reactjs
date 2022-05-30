@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100&family=Satisfy&display=swap');
+
+:root {
+  --primary-dark: #d49fb2;
+  --primary-light: #91acd9;
+}
+.icons {
+  color: #5651e5;
+}
+
+@layer base{
+  body{
+    @apply font-[Roboto]
+  }
+  
+  li{
+    @apply p-6 text-stone-900 
+  }
+
+  h1{
+    @apply text-3xl md:text-4xl dark:text-slate-900 font-[Satisfy] font-bold
+  }
+
+  h2{
+    @apply text-3xl font-bold
+  }
+
+  h3{
+    @apply text-xl font-medium
+  }
+  button{
+    @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md
+  }
+  .icons {
+    @apply text-2xl cursor-pointer
+  }
+
+}
